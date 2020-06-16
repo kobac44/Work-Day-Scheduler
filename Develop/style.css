@@ -21,10 +21,6 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-td {
-  border: 1px dotted #333;
-}
-
 .description {
   white-space: pre-wrap;
 }
@@ -34,9 +30,13 @@ td {
   border-radius: 15px;
 }
 
+.container {
+  border: 1px dashed #333;
+}
+
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 40px;
   border-top: 1px solid white;
 }
 
