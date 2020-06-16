@@ -1,3 +1,2 @@
-//Save entries in local storage
-
-function saveEvent(index) {}
+//show time using Momentjs
+$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
