@@ -1,9 +1,9 @@
 //show time using Momentjs format
 //$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
-const $currentDay = $("#currentDay");
-const $container = $(".container");
-let now = moment().format("dddd, MMMM Do");
-$currentDay.text(now);
+// const $currentDay = $("#currentDay");
+// const $container = $(".container");
+// let now = moment().format("dddd, MMMM Do");
+// $currentDay.text(now);
 
 //Create local Storage , clear, save, and remove
 // Populate saved items
@@ -41,4 +41,38 @@ $(document).ready(function () {
   data10.val(localStorage.getItem("Entry10"));
   data11.val(localStorage.getItem("Entry11"));
   data12.val(localStorage.getItem("Entry12"));
+
+  let button9 = $("#btn9");
+  let button10 = $("#btn10");
+  let button11 = $("#btn11");
+  let button12 = $("#btn12");
+  let button1 = $("#btn1");
+  let button2 = $("#btn2");
+  let button3 = $("#btn3");
+  let button4 = $("#btn4");
+  let button5 = $("#btn5");
+
+  const timeNow = parseInt(moment().format("HH"));
+
+  function clear() {
+    localStorage.clear();
+    data1.val("");
+    data2.val("");
+    data3.val("");
+    data4.val("");
+    data5.val("");
+    data9.val("");
+    data10.val("");
+    data11.val("");
+    data12.val("");
+  }
+
+  function clock() {
+    dayEl.text(momet().format("LL"));
+    timeEl.text(moment().format("hh:mm:ssA"));
+    $(".jumbotron").append(dayEl);
+    $(".jumbotron").apprend(timeEl);
+  }
+
+  function checkTime() {}
 });
