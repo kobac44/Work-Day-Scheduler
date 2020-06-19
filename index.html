@@ -31,166 +31,27 @@
     <!-- Timeblocks go here -->
 
     <div class="container">
-      <div class="row time-block" id="9AM">
-        <p class="hour col-2">9AM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-1"
-          data-time="9 am"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn9"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
+      <form class="time-block" id="9AM">
+        <div class="row">
+          <p class="hour col-2">9AM</p>
+          <textarea class="col-8 description" id="inlineFormInput"></textarea>
+          <button type="submit" data-event="none" class="col-2 saveBtn">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
+      </form>
     </div>
 
-    <div class="container">
-      <div class="row time-block" id="10AM">
-        <p class="hour col-2">10AM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-2"
-          data-time="10 am"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn10"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
+    <div class="row m-5">
+      <h2 class="col-md-9 text-center">Clear All Events?</h2>
+      <button class="col-md-2 btn btn-warning" id="clear">Clear</button>
     </div>
 
-    <div class="container">
-      <div class="row time-block" id="11AM">
-        <p class="hour col-2">11AM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-3"
-          data-time="11 am"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn11"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
+    <div class="row m-5">
+      <h2 class="col-md-9 text-center">Review All Unsaved Changes?</h2>
+      <button class="col-md-2 btn btn-success" id="saveAll">Review</button>
     </div>
 
-    <div class="container">
-      <div class="row time-block" id="12PM">
-        <p class="hour col-2">12PM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-4"
-          data-time="12 noon"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn12"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row time-block" id="1PM">
-        <p class="hour col-2">1PM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-5"
-          data-time="1 pm"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn1"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row time-block" id="2PM">
-        <p class="hour col-2">2PM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-6"
-          data-time="2 pm"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn2"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row time-block" id="3PM">
-        <p class="hour col-2">3PM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-7"
-          data-time="3 pm"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn3"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row time-block" id="4PM">
-        <p class="hour col-2">4PM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-8"
-          data-time="4 pm"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn4"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row time-block" id="5PM">
-        <p class="hour col-2">5PM</p>
-        <textarea
-          class="col-8 list-group-item note"
-          data-input="input-9"
-          data-time="5 pm"
-        ></textarea>
-        <button
-          type="button"
-          class="col-2 btn btn-info saveBtn"
-          data-button="btn5"
-        >
-          <i class="far fa-save"></i>
-        </button>
-      </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
