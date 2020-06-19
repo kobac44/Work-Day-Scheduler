@@ -49,7 +49,7 @@ let timeBlockContainer = $(".container");
 let todaysDateEl = $("#currentDay");
 
 todaysDateEl.text(moment().format("dddd, MMMM Do"));
-
+// helpful!! Understanding how much html I did not need
 //Code to generate time blocks
 let timesArr = [
   "9AM",
