@@ -24,8 +24,8 @@ $("#currentDay").text(
 //Assign saveBtn click listener for user input and time stamp??
 $(".saveBtn").on("click", function () {
   //get nearby values.
-  console.log(this);
-  var text = $(this).siblings(".list").val();
+  //console.log(this);
+  var text = $(this).siblings("input").val();
   var time = $(this).parent().attr("id");
 
   //set items in local storage.
@@ -33,15 +33,15 @@ $(".saveBtn").on("click", function () {
 });
 
 //load any saved data from LocalStorage - do this for each hour created.
-$("9AM .list").val(localStorage.getItem("hour9"));
-$("#10AM .list").val(localStorage.getItem("hour10"));
-$("#11AM .list").val(localStorage.getItem("hour11"));
-$("#12PM .list").val(localStorage.getItem("hour12"));
-$("#1 .list").val(localStorage.getItem("hour1"));
-$("#2 .list").val(localStorage.getItem("hour2"));
-$("#3 .list").val(localStorage.getItem("hour3"));
-$("#4 .list").val(localStorage.getItem("hour4"));
-$("#5 .list").val(localStorage.getItem("hour5"));
+$("9am .input").val(localStorage.getItem("9AM"));
+$("#10am .input").val(localStorage.getItem("10"));
+$("#11am .input").val(localStorage.getItem("11"));
+$("#12pm .input").val(localStorage.getItem("12"));
+$("#1pm .input").val(localStorage.getItem("1"));
+$("#2pm .input").val(localStorage.getItem("2"));
+$("#3pm .input").val(localStorage.getItem("3"));
+$("#4pm .input").val(localStorage.getItem("4"));
+$("#5pm .input").val(localStorage.getItem("5"));
 
 //get current number of hours.
 var currentHour = moment().hour();
