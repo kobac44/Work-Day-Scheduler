@@ -7,7 +7,7 @@ AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 
-#Installations 
+# Installations 
 
 * Moment.js
 * Fontawesome.com
@@ -29,7 +29,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-#Functionality
+# Functionality
 
 This Scheduler required a past, present and future if/ else Js condition (very difficult)
 This activity required a local storage user enable option. (very difficult)
