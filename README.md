@@ -29,8 +29,10 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-# Functionality
 
+
+# functionality
+```
 This Scheduler required a past, present and future if/ else Js condition (very difficult)
 This activity required a local storage user enable option. (very difficult)
 
